@@ -20,11 +20,9 @@ var List = function(props){
 	return(
 		<div>
 			{props.title}
-			<Card/>
+			<Card text={props.content}/>
 		</div>
-
 		);
-
 };
 module.exports = List;
 
