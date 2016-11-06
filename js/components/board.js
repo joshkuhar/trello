@@ -5,7 +5,10 @@ var Lists = require('./list');
 var Board = function(props){
 	return(
 		<div>	
-			<Lists title='Deck 1' content='Ace'/>
+			{props.title}
+			<Lists title={props.lists} content='Ace'/>
+			<Lists title={props.lists} content='Deuce'/>
+			<Lists title={props.lists} content='Three'/>
 		</div>
 		);
 };
