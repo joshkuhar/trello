@@ -5,15 +5,13 @@ var Card = require('./card');
 var List = function(props) {
 	return (
 		<div>
-			{props.title}
-			<Card text={props.content}/>
-			<input type='text' onChange={props.onAddInputChanged} />
-			<button type='submit' onClick={props.onAddSubmit}>Submit</button>
+			<h3>List</h3>
+				<Card text={props.cards} />
+				<input type='text' onChange={props.onAddInputChanged} />
+				<button type='submit' onClick={props.onAddSubmit}>Submit</button>
 		</div>
 		);
 };
 
 module.exports = List;
 
-
-// console.log('I was clicked')
