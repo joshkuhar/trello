@@ -11,19 +11,17 @@ var ListContainer = React.createClass({
 	},
 	onAddInputChanged (event) {
 		return (
-			this.setState({ text: event.target.value }),
-			console.log(this.state.text)
+			this.setState({ text: event.target.value })
 			);
 	},
 	onAddSubmit () {
 		return (
-			console.log("I was clicked")
+			this.setState({ cards: this.state.text })
 			);
 	},
 	render () {
-		return <List cards={this.state.cards} onAddInputChanged={this.onAddInputChanged} onAddSubmit={this.onAddSubmit}/>;
-		}
-
+		return <List cards={this.state.cards} onAddInputChanged={this.onAddInputChanged} onAddSubmit={this.onAddSubmit} />
+	}
 
 });
 
